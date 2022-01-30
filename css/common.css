@@ -1,0 +1,70 @@
+/* common.css */
+
+/* 롯데마트드림체 */
+@font-face  {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff'); } @font-face  { font-family: 'LotteMartDream'; font-style: normal; font-weight: 700; 
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff'); } @font-face  { font-family: 'LotteMartDream'; font-style: normal; font-weight: 300; 
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff'); } .lottemartdream *  { font-family: 'LotteMartDream', sans-serif; 
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font: 23px 'LotteMartDream', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+table, tr, th, td {
+  font: 23px 'LotteMartDream', sans-serif;
+  font-weight: 700;
+  color: #000;
+  border-collapse: collapse;/* 기본여백 없애기 */
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 23px;
+  font-weight: 700;
+}
+ul, ol, li {
+  list-style: none;
+}
+img, fieldset, frameset, iframe {
+  border: none;
+}
+input, select, option, textarea, button {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+}
+a, img, label {
+  display: block;/* 인라인요소로 쓰는경우는 드물기 때문에 block으로 기본 설정 */
+}
+legend, hr, input[type=radio] {
+  display: none;
+}
+em, i, address {
+  font-style: normal;
+}
+b, strong {
+  font-weight: normal;
+}
+p {
+  margin-top: 15px;
+  font-size: 19px;
+  color: #b9b9b9;
+  font-weight: 400;
+}
+a {
+  text-decoration: none; color: #000;
+}
+.skip,.blind {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -6000px;
+}

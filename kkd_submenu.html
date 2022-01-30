@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KrispyKreme</title>
+  
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KrispyKreme" />
+  <meta property="og:title" content="KrispyKreme" />
+  <meta property="og:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+  <meta property="og:image" content="./images/krispykreme_seo.png" />
+  <meta property="og:url" content="#" />
+  
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="KrispyKreme" />
+  <meta property="twitter:title" content="KrispyKreme" />
+  <meta property="twitter:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+  <meta property="twitter:image" content="./images/krispykreme_seo.png" />
+  <meta property="twitter:url" content="#" />
+  
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="css/master_sub_menu_kkd.css">
+
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script>
+    $(function(){
+      $("#tabbar > #tabbar_wrap > .label > ul > li").click(function(){
+        var index=$(this).index();
+        $("#tabbar > #tabbar_wrap > .label > ul > li").removeClass("active");
+        $("#tabbar > #tabbar_wrap > .description > div").removeClass("active");
+        $("#tabbar > #tabbar_wrap > .label > ul > li").eq(index).addClass("active");
+        $("#tabbar > #tabbar_wrap > .description > div").eq(index).addClass("active");
+      });
+    });
+  </script>
+</head>
+<body>
+
+<div class="skip">
+  <a href="#wrap">본문 바로가기</a>
+  <a href="#main_nav">메인메뉴 바로가기</a>
+  <a href="#main_footer">푸터 바로가기</a>
+</div>
+
+<!-- [s]HEADER -->
+<header id="main_header">
+  <!-- [s]상단메뉴 -->
+  <nav id="top_nav">
+    <h2 class="blind">상단메뉴</h2>
+    <div class="top_align">
+      <ul>
+        <li><a href="javascript:void(0)">English</a></li>
+        <li><a href="javascript:void(0)">사이트맵</a></li>
+        <li><a href="javascript:void(0)">로그인</a></li>
+        <li><a href="javascript:void(0)">회원가입</a></li>
+        <li><a href="javascript:void(0)">고객의소리</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- [s]로고 -->
+  <h1 class="logo">
+    <a href="index.html">크리스피크림 도넛</a>
+  </h1>
+
+  <!-- [s]메인메뉴 -->
+  <script>
+  $(function(){
+    $("#main_nav").mouseenter(function(){
+      $("#main_header").addClass("active");
+    });
+    $("#main_nav").mouseleave(function(){
+      $("#main_header").removeClass("active");
+    });
+    var liIndex=0;
+    var cLeft=$(".main_align > ul > li").eq(0).offset().left+$(".main_align > ul > li").eq(0).outerWidth()/2+17;
+    $("#main_nav > .main_align > .circle").css({left:cLeft});
+    $("#main_nav .main_align > ul > li").mouseenter(function(){
+      liIndex=$(this).index();
+      setInterval(function(){
+        cLeft=$(".main_align > ul > li").eq(liIndex).offset().left+$(".main_align > ul > li").eq(liIndex).outerWidth()/2+45;
+        $("#main_nav > .main_align > .circle").css({left:cLeft});
+      },10);
+    });		
+  });
+  </script>
+  <nav id="main_nav">
+    <h2 class="blind">메인메뉴</h2>
+    <div class="main_align">
+      <ul>
+        <li>
+          <a href="kkd_submenu.html">MENU</a>
+          <ul class="sub_nav">
+            <li class="new"><a href="kkd_submenu.html">신제품</a></li>
+            <li><a href="kkd_submenu.html">도넛</a></li>
+            <li><a href="javascript:void(0)">커피</a></li>
+            <li><a href="javascript:void(0)">음료</a></li>
+            <li><a href="javascript:void(0)">아이스크림</a></li>
+            <li><a href="javascript:void(0)">기타상품</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">STORE</a>
+          <ul class="sub_nav">
+            <li><a href="javascript:void(0)">매장 소개</a></li>
+            <li><a href="javascript:void(0)">가맹점 모집</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">ORDERS</a>
+          <ul class="sub_nav">
+            <li><a href="javascript:void(0)">픽업 매장 보기</a></li>
+            <li><a href="javascript:void(0)">배달의 민족</a></li>
+            <li><a href="javascript:void(0)">요기요</a></li>
+            <li><a href="javascript:void(0)">카카오톡</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">EVENT</a>
+          <ul class="sub_nav">
+            <li><a href="javascript:void(0)">진행 이벤트</a></li>
+            <li><a href="javascript:void(0)">종료 이벤트</a></li>
+            <li><a href="javascript:void(0)">당첨자 발표</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)">BRAND</a>
+          <ul class="sub_nav">
+            <li><a href="javascript:void(0)">브랜드 소개</a></li>
+            <li><a href="javascript:void(0)">브랜드 소식</a></li>
+          </ul>
+        </li>
+      </ul>
+      <span class="circle"></span>
+      <div class="sub_bg"></div>
+    </div>
+  </nav>
+
+</header>
+
+<!-- subPage contents-->
+<div id="wrap">
+  <div class="root">
+    <span class="home">HOME</span> &gt; 
+    <span>MENU</span> &gt; 
+    <span><strong>도넛</strong></span>
+  </div>
+
+  <nav id="side_nav">
+    <h2>MENU</h2>
+    <ul>
+      <li><a href="javascript:void(0)">신메뉴</a></li>
+      <li><a href="javascript:void(0)">도넛</a></li>
+      <li><a href="javascript:void(0)">커피</a></li>
+      <li><a href="javascript:void(0)">음료</a></li>
+      <li><a href="javascript:void(0)">아이스크림</a></li>
+      <li><a href="javascript:void(0)">기타상품</a></li>
+    </ul>
+  </nav>
+
+  <!-- [s]메뉴 도넛 상세페이지 -->
+  <div id="tabbar">
+    <h1><span>|</span>Doughnuts</h1>
+    <div id="tabbar_wrap">
+      <div class="label">
+        <ul>
+          <li class="active">ALL</li>
+          <li>GLAZED</li>
+          <li>SEASON</li>
+          <li>CLASSIC</li>
+          <li>PREMIUM</li>
+        </ul>
+      </div>
+      <div class="description">
+        <div class="active">
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_1.png" width="230" height="224" alt="오리지널 글레이즈드" />
+              <div>
+                <h1>오리지널 글레이즈드</h1>
+                <h2>ORIGINAL GLAZED</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_2.png" width="230" height="224" alt="글레이즈드 사워 크림" />
+              <div>
+                <h1>글레이즈드 사워 크림</h1>
+                <h2>GLAZED SOUR CREAM</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_3.png" width="230" height="224" alt="글레이즈드 초콜릿 케익" />
+              <div>
+                <h1>글레이즈드 초콜릿 케익</h1>
+                <h2>GLAZED CHOCOLATE CAKE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_19.png" width="230" height="224" alt="스마일 도넛" />
+              <div>
+                <h1>스마일 도넛</h1>
+                <h2>SMILE DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_20.png" width="230" height="224" alt="땡스 도넛" />
+              <div>
+                <h1>땡스 도넛</h1>
+                <h2>THANKS DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_21.png" width="230" height="224" alt="러브 도넛" />
+              <div>
+                <h1>러브 도넛</h1>
+                <h2>LOVE DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_4.png" width="230" height="224" alt="딸기와플넛" />
+              <div>
+                <h1>딸기와플넛</h1>
+                <h2>STRAWBERRY WAFFLENUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_5.png" width="230" height="224" alt="초코와플넛" />
+              <div>
+                <h1>초코와플넛</h1>
+                <h2>CHOCO WAFFLENUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_6.png" width="230" height="224" alt="카라멜와플넛" />
+              <div>
+                <h1>카라멜와플넛</h1>
+                <h2>CARAMEL WAFFLENUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_10.png" width="230" height="224" alt="요! 쿠키" />
+              <div>
+                <h1>요! 쿠키</h1>
+                <h2>YO! COOKIE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_11.png" width="230" height="224" alt="드롭 더 쿠키" />
+              <div>
+                <h1>드롭 더 쿠키</h1>
+                <h2>DROP THE COOKIE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_12.png" width="230" height="224" alt="로투스 비스코프 도넛" />
+              <div>
+                <h1>로투스 비스코프 도넛</h1>
+                <h2>LOTUS BISCOFF DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_16.png" width="230" height="224" alt="리고 피넛버터 도넛" />
+              <div>
+                <h1>리고 피넛버터 도넛</h1>
+                <h2>PEANUT BUTTER</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_17.png" width="230" height="224" alt="쿠키 스웩" />
+              <div>
+                <h1>쿠키 스웩</h1>
+                <h2>COOIKE SWAG</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_18.png" width="230" height="224" alt="왓츠 업 더블" />
+              <div>
+                <h1>왓츠 업 더블</h1>
+                <h2>WHAT'S UP DOUBLE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_13.png" width="230" height="224" alt="카라멜 아이스드" />
+              <div>
+                <h1>카라멜 아이스드</h1>
+                <h2>Caramel Iced</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_14.png" width="230" height="224" alt="슈거 코티드" />
+              <div>
+                <h1>슈거 코티드</h1>
+                <h2>SUGAR</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_15.png" width="230" height="224" alt="파우더 스트로베리 필드" />
+              <div>
+                <h1>파우더 스트로베리 필드</h1>
+                <h2>POWDERED STRAWBERRY</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_7.png" width="230" height="224" alt="초코홀릭" />
+              <div>
+                <h1>초코홀릭</h1>
+                <h2>CHOCOHOLIC</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_8.png" width="230" height="224" alt="뉴욕 치즈케익" />
+              <div>
+                <h1>뉴욕 치즈케익</h1>
+                <h2>NEWYORK CHEESECAKE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_9.png" width="230" height="224" alt="초콜릿 아이스드 글레이즈드" />
+              <div>
+                <h1>초콜릿 아이스드 글레이즈드</h1>
+                <h2>CHOCOLATE ICED GLAZED</h2>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_1.png" width="230" height="224" alt="오리지널 글레이즈드" />
+              <div>
+                <h1>오리지널 글레이즈드</h1>
+                <h2>ORIGINAL GLAZED</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_2.png" width="230" height="224" alt="글레이즈드 사워 크림" />
+              <div>
+                <h1>글레이즈드 사워 크림</h1>
+                <h2>GLAZED SOUR CREAM</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_3.png" width="230" height="224" alt="글레이즈드 초콜릿 케익" />
+              <div>
+                <h1>글레이즈드 초콜릿 케익</h1>
+                <h2>GLAZED CHOCOLATE CAKE</h2>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_19.png" width="230" height="224" alt="스마일 도넛" />
+              <div>
+                <h1>스마일 도넛</h1>
+                <h2>SMILE DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_20.png" width="230" height="224" alt="땡스 도넛" />
+              <div>
+                <h1>땡스 도넛</h1>
+                <h2>THANKS DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_21.png" width="230" height="224" alt="러브 도넛" />
+              <div>
+                <h1>러브 도넛</h1>
+                <h2>LOVE DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_4.png" width="230" height="224" alt="딸기와플넛" />
+              <div>
+                <h1>딸기와플넛</h1>
+                <h2>STRAWBERRY WAFFLENUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_5.png" width="230" height="224" alt="초코와플넛" />
+              <div>
+                <h1>초코와플넛</h1>
+                <h2>CHOCO WAFFLENUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_6.png" width="230" height="224" alt="카라멜와플넛" />
+              <div>
+                <h1>카라멜와플넛</h1>
+                <h2>CARAMEL WAFFLENUT</h2>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_7.png" width="230" height="224" alt="초코홀릭" />
+              <div>
+                <h1>초코홀릭</h1>
+                <h2>CHOCOHOLIC</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_8.png" width="230" height="224" alt="뉴욕 치즈케익" />
+              <div>
+                <h1>뉴욕 치즈케익</h1>
+                <h2>NEWYORK CHEESECAKE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_9.png" width="230" height="224" alt="초콜릿 아이스드 글레이즈드" />
+              <div>
+                <h1>초콜릿 아이스드 글레이즈드</h1>
+                <h2>CHOCOLATE ICED GLAZED</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_13.png" width="230" height="224" alt="카라멜 아이스드" />
+              <div>
+                <h1>카라멜 아이스드</h1>
+                <h2>Caramel Iced</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_14.png" width="230" height="224" alt="슈거 코티드" />
+              <div>
+                <h1>슈거 코티드</h1>
+                <h2>SUGAR</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_15.png" width="230" height="224" alt="파우더 스트로베리 필드" />
+              <div>
+                <h1>파우더 스트로베리 필드</h1>
+                <h2>POWDERED STRAWBERRY</h2>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_10.png" width="230" height="224" alt="요! 쿠키" />
+              <div>
+                <h1>요! 쿠키</h1>
+                <h2>YO! COOKIE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_11.png" width="230" height="224" alt="드롭 더 쿠키" />
+              <div>
+                <h1>드롭 더 쿠키</h1>
+                <h2>DROP THE COOKIE</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_12.png" width="230" height="224" alt="로투스 비스코프 도넛" />
+              <div>
+                <h1>로투스 비스코프 도넛</h1>
+                <h2>LOTUS BISCOFF DOUGHNUT</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_16.png" width="230" height="224" alt="리고 피넛버터 도넛" />
+              <div>
+                <h1>리고 피넛버터 도넛</h1>
+                <h2>PEANUT BUTTER</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_17.png" width="230" height="224" alt="쿠키 스웩" />
+              <div>
+                <h1>쿠키 스웩</h1>
+                <h2>COOIKE SWAG</h2>
+              </div>
+            </a></li>
+            <li><a href="javascript:void(0)"><img src="images/doughnuts_18.png" width="230" height="224" alt="왓츠 업 더블" />
+              <div>
+                <h1>왓츠 업 더블</h1>
+                <h2>WHAT'S UP DOUBLE</h2>
+              </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- [s]FOOTER -->
+<footer id="main_footer">
+  <div id="util">
+    <ul class="policy">
+      <li><a href="https://www.lottegrs.com/main.jsp">회사소개</a></li>
+      <li><a href="javascript:void(0)">이용약관</a></li>
+      <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+      <li><a href="javascript:void(0)">이메일무단수집거부</a></li>
+      <li><a href="javascript:void(0)">영상정보 처리기기 운영 및 관리 방침</a></li>
+      <li><a href="javascript:void(0)">CONTACT US</a></li>
+    </ul>
+    <h1 class="logo"><a href="index.html">크리스피크림 도넛</a></h1>
+    <div class="info">
+      <address>서울특별시 용산구 한강대로71길 47 대표문의 : 02-709-1114 (가맹문의, 행사안내 등)</address>
+      <p>사업자번호 : 106-81-23498 대표자 : 남익우</p>
+    </div>
+    <p class="copyright">COPYRIGHT &copy; 2013 KRISPY KREME DOUGHNUTS. ALL RIGHTS RESERVED</p>
+  </div>
+</footer>
+
+</body>
+</html>

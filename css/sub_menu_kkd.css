@@ -1,0 +1,161 @@
+/* sub_menu_kkd.css */
+
+html, body {
+  width: 100%;
+  font-size: 20px;
+}
+h1 {
+  width: 250px;
+  font-size: 1em;
+  text-align: center;
+}
+h2 {
+  width: 250px;
+  font-size: 0.8em;
+  color: #d42051;
+  text-align: center;
+}
+
+/** [s]상세페이지 **/
+#wrap {
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 250px;
+  overflow: hidden;
+}
+  #wrap > .root {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+    #wrap > .root > span.home {
+      padding-left: 20px;
+      font-size: 18px;
+      background: url(../images/img_navi_home.gif) no-repeat left 1px;
+    }
+      #wrap > .root > span > strong {
+        font-size: 18px;
+        font-weight: 700;
+        color: #d42051;
+      }
+    #wrap > #side_nav {
+      float: left;
+      width: 250px;
+    }
+      #wrap > #side_nav > h2 {
+        width: 100%;
+        height: 70px;
+        text-align: left;
+        padding-left: 20px;
+
+        background: #087552;
+        color: #fff;
+        font-size: 30px;
+        line-height: 70px;
+        box-sizing: border-box;
+      }
+      #wrap > #side_nav > ul {
+        width: 100%;
+        background: #f4f4f4;
+      }
+        #wrap > #side_nav > ul > li {
+          height: 50px;
+          box-sizing: border-box;
+          border-bottom: 1px solid #e5e5e5;
+          background: url(../images/sub_arr.gif) no-repeat 221px center;
+          color: #2a3747;
+        }
+        #wrap > #side_nav > ul > li:hover {
+          background: url(../images/sub_arr_bg.png) no-repeat;
+        }
+        #wrap > #side_nav > ul > li:last-child {
+          border-color: #c3c3c3;
+        }
+        #wrap > #side_nav > ul > li > a {
+          color: #293848;
+          font-size: 18px;
+          line-height: 50px;
+          padding-left: 20px;
+        }
+
+  /** [s]도넛 상세페이지 **/
+  #wrap > #tabbar {
+    float: right;
+    width: 1000px;
+    padding-right: 70px;
+    margin-bottom: 200px;
+  }
+    #wrap > #tabbar > h1 {
+      height: 50px;
+      margin-left: 10px;
+      font-size: 50px;
+      color: #087552;
+    }
+      #wrap > #tabbar > h1 > span {
+        padding: 0 10px;
+      }
+      #wrap > #tabbar > #tabbar_wrap {
+        margin-top: 50px;
+        height: auto;
+      }
+          #wrap > #tabbar > #tabbar_wrap > .label > ul {
+            overflow: hidden;
+            width: 1000px;
+            display: block;
+          }
+          #wrap > #tabbar > #tabbar_wrap > .label > ul > li {
+            font-size: 22px;
+            overflow: hidden;
+            float: left;
+            width: 125px; height: 50px;
+            margin-left: 10px;
+            background: #fff;
+            border: 0.5px solid #ccc;
+            border-radius: 30px 30px 30px 30px;
+            text-align: center; line-height: 55px;
+            box-sizing: border-box;
+            cursor: pointer;
+          }
+          #wrap > #tabbar > #tabbar_wrap > .label > ul > li.active {
+            color: #fff;
+            background: #077451;
+            border: 0.5px solid #077451;
+            border-bottom: none;
+          }
+            #wrap > #tabbar > #tabbar_wrap > .label > ul > li:hover {
+            color: #fff;
+            background: #077451;
+            border: 0.5px solid #077451;
+            border-bottom: none;
+          }
+
+          #wrap > #tabbar > #tabbar_wrap > .description > div {
+            width: 1000px;
+            box-sizing: border-box;
+            display: none;
+          }
+            #wrap > #tabbar > #tabbar_wrap > .description > div.active {
+              display: block;
+            }
+              #wrap > #tabbar > #tabbar_wrap > .description > div > ul {
+                overflow: hidden;
+                margin-top: 30px;
+              }
+                #wrap > #tabbar > #tabbar_wrap > .description > div > ul > li {
+                  float: left;
+                  width: 250px;
+                  margin: 20px 20px;
+                }
+                    #wrap > #tabbar .description > div > ul > li > a > img {
+                      margin-left: 15px;
+                    }
+                    #wrap > #tabbar .description > div > ul > li > a > div {
+                      margin-top: 10px;
+                    }
+                      #wrap > #tabbar .description > div > ul > li > a > div > h1 {
+                        padding: 10px 0;
+                      }
+                    #wrap > #tabbar .description > .active > ul > li > a > img:hover {
+                      transform: scale(1.1);
+                      transition-duration: 0.4s
+                    }

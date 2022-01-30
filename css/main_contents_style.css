@@ -1,0 +1,246 @@
+/* main_contents_style.css */
+
+#wrap {
+  width: 100%;
+}
+#wrap > section#orders {
+  width: 100%;
+  height: 800px;
+  background-image: url(../images/bg_orders.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+  /** CONTENTS MENU **/
+  #wrap > #menu {
+    width: 1200px; height: 750px;
+    margin: 0 auto;
+    min-width: 1200px;
+  }
+    #wrap > #menu > h2 {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      text-align: center;
+      font-size: 30px;
+    }
+      #wrap > #menu > div.menu_list > ul {
+        width: 100%;
+        text-align: center;
+      }
+        #wrap > #menu > div.menu_list > ul > li {
+          display: inline-block;
+        }
+          #wrap > #menu > div.menu_list > ul > li > a {
+            width: 220px; height: 260px;
+          }
+            #wrap > #menu > div.menu_list > ul > li > a > img {
+              margin: 20px auto;
+              transition-duration: 0.3s;
+              width: 194px; height: 194px;
+              border-radius: 50%;
+              border: 1px solid transparent;
+              box-shadow: 0 0 0 #087552;
+            }
+            #wrap > #menu > div.menu_list > ul > li > a > img:hover {
+              border-color: #087552;
+              box-shadow: -8px 8px 0 #087552;
+              transform: translateX(8px) translateY(-8px);
+            }
+            #wrap > #menu > div.menu_list > ul > li > a > h3 {
+              margin-top: 30px;
+            }
+
+  /** CONTENTS EVENT **/
+  #wrap > #main_event {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    min-width: 1200px;
+  }
+    #main_event > h2 {
+      padding-top: 150px;
+      font-size: 30px;
+      text-align: center;
+    }
+    /* [s]EVENT SLIDE*/
+    #main_event .eventswiper-container {
+      width: 1200px;
+      height: 400px;
+      margin-top: 100px;
+    }
+        #main_event .eventswiper-slide {
+          width: 1200px;
+          height: 300px;
+        }
+          #main_event .eventswiper-slide > a {
+            position: relative;
+            width: 100%;
+          }
+          #main_event .eventswiper-slide > a > img {
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            border: 3px solid transparent;
+          }
+          #main_event .eventswiper-slide > a > img:hover {
+            border-color:#d42051;
+          }
+            #main_event .eventswiper-slide > a > h3 {
+              position: absolute;
+              top: 300px; left: 5px;
+            }
+            #main_event .eventswiper-slide > a > p {
+              position: absolute;
+              top: 320px; left: 5px;
+              margin-top: 15px;
+            }
+    #main_event .eventswiper-button-next {
+      position: absolute;
+      right: 0;
+    }
+    #main_event .eventswiper-button-prev {
+      position: absolute;
+      left: 0;
+    }
+    /* [e]EVENT SLIDE*/
+
+  /** CONTENTS ORDERS **/
+  #wrap > #orders {
+    height: 800px;
+  }
+    #orders > h2 {
+      padding-top: 150px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #orders > div.contents_orders {
+      width: 1200px; height: 620px;
+      margin: 0 auto;
+      min-width: 1200px;
+    }
+      #orders > div.contents_orders > .orders_list {
+        width: 100%;
+        height: 300px;
+        margin-top: 100px;
+        text-align: center;
+      }
+        #orders > div.contents_orders > .orders_list> li {
+          display: inline-block;
+        }
+          #orders > div.contents_orders > .orders_list> li > a {
+            width: 260px; height: 260px;
+          }
+            #orders > div.contents_orders > .orders_list> li > a > img {
+              margin: 20px auto;
+            }
+            #orders > div.contents_orders > .orders_list> li > a > img:hover {
+              transform: scale(1.1);
+              transition-duration: 0.3s
+            }
+            #orders > div.contents_orders > .orders_list> li > a > h3 {
+              margin-top: 30px;
+            }
+
+  /** CONTENTS SNS **/
+  #wrap > #sns {
+    height: 900px;
+    min-width: 1200px;
+    background: #fff;
+    background-image: radial-gradient(#fff4f7 20%, transparent 0), radial-gradient(#fff4f7 20%, transparent 0);
+    background-position: 0 0, 30px 50px;
+    background-size: 20px 20px;
+  }
+    #wrap > #sns > h2 {
+      padding-top: 150px;
+      font-size: 30px;
+      text-align: center;
+    }
+    #wrap > #sns > .sns_wrap {
+      width: 1200px;
+      height: 260px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 20px;
+    }
+      #wrap > #sns > .sns_wrap > strong {
+        margin-top: 25px;
+        font-size: 20px;
+      }
+      #wrap > #sns > .sns_wrap > ul {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+        #wrap > #sns > .sns_wrap > ul > li {
+          display: inline-block;
+          width: 100px;
+        }
+            #wrap > #sns > .sns_wrap > ul > li > a > img {
+              margin: 20px auto;
+            }
+
+    /** INSTAGRAM PHOTO **/
+    #wrap > #sns > .sns_insta {
+      width: 1200px;
+      height: 290px;
+      margin: 0 auto;
+    }
+      #wrap > #sns > .sns_insta > ul {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+      }
+        #wrap > #sns > .sns_insta > ul > li {
+          float: left;
+          margin: 0 5px;
+        }
+          #wrap > #sns > .sns_insta > ul > li > #instagram_1 {
+            background: url(../images/insta1.jpg) no-repeat 0 / 100%;
+          }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_1 > a > div.sns_more {
+                width: 290px; height: 290px;
+                background: rgba( 0,0,0,0.5);
+                transition-duration: 0.3s;
+                opacity: 0;
+              }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_1 > a > div.sns_more:hover {
+                opacity: 1;
+              }
+          #wrap > #sns > .sns_insta > ul > li > #instagram_2 {
+            background: url(../images/insta2.jpg) no-repeat 0 / 100%;
+          }
+            #wrap > #sns > .sns_insta > ul > li > #instagram_2 > a {}
+              #wrap > #sns > .sns_insta > ul > li > #instagram_2 > a > div.sns_more {
+                width: 290px; height: 290px;
+                background: rgba( 0,0,0,0.5);
+                transition-duration: 0.3s;
+                opacity: 0;
+              }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_2 > a > div.sns_more:hover {
+                opacity: 1;
+              }
+
+          #wrap > #sns > .sns_insta > ul > li > #instagram_3 {
+            background: url(../images/insta3.png) no-repeat 0 / 100%;
+          }
+            #wrap > #sns > .sns_insta > ul > li > #instagram_3 > a {}
+              #wrap > #sns > .sns_insta > ul > li > #instagram_3 > a > div.sns_more {
+                width: 290px; height: 290px;
+                background: rgba( 0,0,0,0.5);
+                transition-duration: 0.3s;
+                opacity: 0;
+              }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_3 > a > div.sns_more:hover {
+                opacity: 1;
+              }
+          #wrap > #sns > .sns_insta > ul > li > #instagram_4 {
+            background: url(../images/insta4.png) no-repeat 0 / 100%;
+          }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_4 > a > div.sns_more {
+                width: 290px; height: 290px;
+                background: rgba( 0,0,0,0.5);
+                transition-duration: 0.3s;
+                opacity: 0;
+              }
+              #wrap > #sns > .sns_insta > ul > li > #instagram_4 > a > div.sns_more:hover {
+                opacity: 1;
+              }

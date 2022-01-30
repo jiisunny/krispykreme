@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KrispyKreme</title>
+
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KrispyKreme" />
+  <meta property="og:title" content="KrispyKreme" />
+  <meta property="og:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+  <meta property="og:image" content="./images/krispykreme_seo.png" />
+  <meta property="og:url" content="#" />
+
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="KrispyKreme" />
+  <meta property="twitter:title" content="KrispyKreme" />
+  <meta property="twitter:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+  <meta property="twitter:image" content="./images/krispykreme_seo.png" />
+  <meta property="twitter:url" content="#" />
+
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+
+  <!-- Link Swiper's css -->
+  <link rel="stylesheet" href="css/swiper.css" />
+  <!-- Link Event Swiper's css -->
+  <link rel="stylesheet" href="css/swiper_event.css" />
+
+  <script src="js/jquery-3.5.0.min.js"></script>
+
+<style>
+/* BANNER SWIPER */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide > a,
+.swiper-slide > a > img{
+  width: 100%
+}
+
+/* EVENT SWIPER */
+.eventswiper-container {
+  width: 100%;
+  height: 100%;
+}
+.eventswiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+</style>
+</head>
+
+<body>
+<div class="skip">
+  <a href="#wrap">본문 바로가기</a>
+  <a href="#main_nav">메인메뉴 바로가기</a>
+  <a href="#main_footer">푸터 바로가기</a>
+</div>
+
+<!-- [s]HEADER -->
+<header id="main_header">
+  <!-- [s]상단메뉴 -->
+  <nav id="top_nav">
+    <h2 class="blind">상단메뉴</h2>
+    <div class="top_align">
+      <ul>
+        <li><a href="#">English</a></li>
+        <li><a href="#">사이트맵</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">고객의소리</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- [s]로고 -->
+  <h1 class="logo">
+    <a href="index.html">크리스피크림 도넛</a>
+  </h1>
+
+  <!-- [s]메인메뉴 -->
+  <script>
+  $(function(){
+    $("#main_nav").mouseenter(function(){
+      $("#main_header").addClass("active");
+    });
+
+    $("#main_nav").mouseleave(function(){
+      $("#main_header").removeClass("active");
+    });
+
+    var liIndex=0;
+    var cLeft=$(".main_align > ul > li").eq(0).offset().left+$(".main_align > ul > li").eq(0).outerWidth()/2+17;
+
+    $("#main_nav > .main_align > .circle").css({left:cLeft});
+
+    $("#main_nav .main_align > ul > li").mouseenter(function(){
+      liIndex=$(this).index();
+      setInterval(function(){
+        cLeft=$(".main_align > ul > li").eq(liIndex).offset().left+$(".main_align > ul > li").eq(liIndex).outerWidth()/2+45;
+        $("#main_nav > .main_align > .circle").css({left:cLeft});
+      },10);
+    });   
+  });
+  </script>
+  <nav id="main_nav">
+    <h2 class="blind">메인메뉴</h2>
+    <div class="main_align">
+      <ul>
+        <li>
+          <a href="kkd_submenu.html">MENU</a>
+          <ul class="sub_nav">
+            <li class="new"><a href="kkd_submenu.html">신제품</a></li>
+            <li><a href="kkd_submenu.html">도넛</a></li>
+            <li><a href="#">커피</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">아이스크림</a></li>
+            <li><a href="#">기타상품</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">STORE</a>
+          <ul class="sub_nav">
+            <li><a href="#">매장 소개</a></li>
+            <li><a href="#">가맹점 모집</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">ORDERS</a>
+          <ul class="sub_nav">
+            <li><a href="#">픽업 매장 보기</a></li>
+            <li><a href="#">배달의 민족</a></li>
+            <li><a href="#">요기요</a></li>
+            <li><a href="#">카카오톡</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">EVENT</a>
+          <ul class="sub_nav">
+            <li><a href="#">진행 이벤트</a></li>
+            <li><a href="#">종료 이벤트</a></li>
+            <li><a href="#">당첨자 발표</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BRAND</a>
+          <ul class="sub_nav">
+            <li><a href="#">브랜드 소개</a></li>
+            <li><a href="#">브랜드 소식</a></li>
+          </ul>
+        </li>
+      </ul>
+      <span class="circle"></span>
+      <div class="sub_bg"></div>
+    </div>
+  </nav>
+</header>
+  
+<!-- 배너슬라이더 시작 -->
+<!-- Swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <a href="#"><img src="images/Banner_01.jpg" alt="신상품 미니스 도넛" /></a>
+    </div>
+
+    <div class="swiper-slide">
+      <a href="#"><img src="images/Banner_02.jpg" alt="딸기 도넛" /></a></div>
+
+    <div class="swiper-slide">
+      <a href="#"><img src="images/Banner_03.jpg" alt="신선한 파스퇴르 아이스크림" /></a>
+    </div>
+    <div class="swiper-slide">
+      <a href="#"><img src="images/Banner_04.jpg" alt="단체주문 할인" /></a>
+    </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <!--
+  <div class="swiper-button-next"><img src="images/btn_next.png" alt="next" /></div>
+  <div class="swiper-button-prev"><img src="images/btn_prev.png" alt="prev" /></div>
+  -->
+</div>
+
+<!-- Swiper JS -->
+<script src="js/swiper.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 2900,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+<!-- 배너슬라이더 끝 -->
+
+<!-- [s]CONTENTS -->
+<div id="wrap">
+  <section id="menu">
+    <h2>크리스피크림 MENU</h2>
+    <div class="menu_list">
+      <ul>
+        <li>
+          <a href="kkd_submenu.html">
+            <img src="images/menu1.png" alt="Doughnuts" />
+            <h3>Doughnuts</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/menu2.png" alt="Coffee" />
+            <h3>Coffee</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/menu3.png" alt="Beverage" />
+            <h3>Beverage</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/menu4.png" alt="Icecream" />
+            <h3>Icecream</h3>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/menu5.png" alt="Others" />
+            <h3>Others</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="main_image_1">
+    <img src="images/main_image1.jpg" alt="enjoy krispy kreme" />
+  </section>
+
+  <section id="main_event">
+    <h2>크리스피크림 EVENT</h2>
+      <!-- 이벤트 슬라이더 시작 -->
+      <!-- Swiper -->
+      <div class="eventswiper-container">
+        <div class="eventswiper-wrapper">
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event1.png" alt="신메뉴 미니더즌 할인" />
+              <h3>오리지널 필드 도넛 출시!</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event2.png" alt="롯데잇츠 페이백" />
+              <h3>더즌 상품 단체주문 할인</h3>
+              <p>상시진행</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event3.png" alt="하프더즌 이벤트" />
+              <h3>순수우유 쉐이크 콤보 할인</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event4.png" alt="할인 이벤트" />
+              <h3>친구추가하고 딸기도넛 받자!</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event5.png" alt="할인 이벤트" />
+              <h3>매주 수요일, 하프더즌 1+1</h3>
+              <p>상시진행</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event6.png" alt="할인 이벤트" />
+              <h3>크리스피크림 새벽배송 개시</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event7.png" alt="할인 이벤트" />
+              <h3>롯데잇츠 L.POINT 페이백!</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+          <div class="eventswiper-slide">
+            <a href="#"><img src="images/event8.png" alt="할인 이벤트" />
+              <h3>L.pay 결제시 10% 할인</h3>
+              <p>2020-09-01 ~ 2020-11-25</p>
+            </a>
+          </div>
+        </div>
+      <!-- Add Pagination -->
+      <!--
+      <div class="eventswiper-pagination"></div>
+      -->
+      <!-- Add Arrows -->
+      <div class="eventswiper-button-next"></div>
+      <div class="eventswiper-button-prev"></div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="js/swiper_event.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.eventswiper-container', {
+          slidesPerView: 4,
+          spaceBetween: 22,
+          slidesPerGroup: 4,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          navigation: {
+            nextEl: '.eventswiper-button-next',
+            prevEl: '.eventswiper-button-prev',
+          },
+        });
+      </script>
+      <!-- 이벤트 슬라이더 끝 -->
+  </section>
+
+  <section id="main_image_2">
+    <img src="images/main_image2.jpg" alt="order now" />
+  </section>
+  
+  <section id="orders">
+    <h2>크리스피크림 ORDERS</h2>
+    <div class="contents_orders">
+      <ul class="orders_list">
+        <li>
+          <a href="#">
+            <img src="images/orders1.png" alt="매장 찾기" />
+            <h3>매장 찾기</h3>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.baemin.com/">
+            <img src="images/orders2.png" alt="배달의 민족" />
+            <h3>배달의 민족</h3>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.yogiyo.co.kr/mobile/#/">
+            <img src="images/orders3.png" alt="요기요" />
+            <h3>요기요</h3>
+          </a>
+        </li>
+        <li>
+          <a href="https://pf.kakao.com/_nuUad">
+            <img src="images/orders4.png" alt="카카오톡" />
+            <h3>카카오톡</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sns">
+    <h2>FOLLOW US</h2>
+    <div class="sns_wrap">
+      <strong>Share your #krispykreme moment!</strong>
+      <ul>
+        <li><a href="https://www.instagram.com/krispykremekr/"><img src="images/instagram.png" alt="인스타그램" /></a></li>
+        <li><a href="https://www.facebook.com/kkdkorea1937"><img src="images/facebook.png" alt="페이스북" /></a></li>
+        <li><a href="https://twitter.com/krispykremekr"><img src="images/twitter.png" alt="트위터" /></a></li>
+      </ul>
+    </div>
+    <div class="sns_insta">
+      <ul>
+        <li>
+          <div id="instagram_1">
+            <a href="https://www.instagram.com/krispykremekr/">
+              <div class="sns_more">
+                <img src="images/sns_more.png" alt="더보기">
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div id="instagram_2">
+            <a href="https://www.instagram.com/krispykremekr/">
+              <div class="sns_more">
+                <img src="images/sns_more.png" alt="더보기">
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div id="instagram_3">
+            <a href="https://www.instagram.com/krispykremekr/">
+              <div class="sns_more">
+                <img src="images/sns_more.png" alt="더보기">
+              </div>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div id="instagram_4">
+            <a href="https://www.instagram.com/krispykremekr/">
+              <div class="sns_more">
+                <img src="images/sns_more.png" alt="더보기">
+              </div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+  
+  <!-- [s]FOOTER -->
+  <footer id="main_footer">
+    <div id="util">
+      <ul class="policy">
+        <li><a href="https://www.lottegrs.com/main.jsp">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이메일무단수집거부</a></li>
+        <li><a href="#">영상정보 처리기기 운영 및 관리 방침</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+      <h1 class="logo"><a href="index.html">크리스피크림 도넛</a></h1>
+      <div class="info">
+        <address>서울특별시 용산구 한강대로71길 47 대표문의 : 02-709-1114 (가맹문의, 행사안내 등)</address>
+        <p>사업자번호 : 106-81-23498 대표자 : 남익우</p>
+      </div>
+      <p class="copyright">COPYRIGHT &copy; 2013 KRISPY KREME DOUGHNUTS. ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
+
+</body>
+</html>

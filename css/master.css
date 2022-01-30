@@ -1,0 +1,34 @@
+/* master.css */
+
+@import url( common.css);
+@import url( header_style.css);
+@import url( main_contents_style.css);
+@import url( footer_style.css);
+
+/**** LAYOUT ********/
+body {
+  width: 100%;
+  display: block;
+}
+  body > img {
+    width: 100%;
+  }
+.swiper-container {
+  width: 100%;
+  margin-top: 234px;
+}
+  .swiper-container > img {
+    width: 100%;
+  }
+#main_image_1 {
+  width: 100%;
+}
+  #main_image_1 > img {
+    width: 100%;
+  }
+#main_image_2 {
+  width: 100%;
+}
+  #main_image_2 > img {
+    width: 100%;
+  }
