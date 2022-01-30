@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](#)
 
-# KrispyKreme 크리스피크림 도넛 🍩 🍦
+# KrispyKreme 크리스피크림 도넛 🍩 🍩
 
 크리스피크림 웹페이지 리뉴얼 및 제작
 
