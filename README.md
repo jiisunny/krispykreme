@@ -4,9 +4,9 @@
 
 크리스피크림 웹페이지 리뉴얼 및 제작
 
-[크리스피크림 웹페이지](#)
+[크리스피크림 웹페이지](https://elegant-thompson-69b225.netlify.app/)
 
-[크리스피크림 서브페이지 - 메뉴](#)
+[크리스피크림 서브페이지 - 메뉴](https://elegant-thompson-69b225.netlify.app/kkd_submenu.html)
 
 메인페이지 -
 
@@ -14,7 +14,7 @@
 
 서브페이지 - 
 
-![크리스피크림 메인페이지](https://raw.githubusercontent.com/jiisunny/krispykreme/master/_assets/main_screenshot.png)
+![크리스피크림 메인페이지](https://raw.githubusercontent.com/jiisunny/krispykreme/master/_assets/sub_screenshot.png)
 
 
 ## 뷰포트(Viewport) 렌더링 방식 설정
