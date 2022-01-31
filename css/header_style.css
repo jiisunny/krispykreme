@@ -1,6 +1,6 @@
 /* header_style.css */
 
-#main_header{
+#main_header {
   width: 100%; height: 234px;
   min-width: 1500px;
   background: #fff;
@@ -10,72 +10,72 @@
   z-index: 100;
   transition-duration: 0.3s;
 }
-#main_header.active{
+#main_header.active {
   height: 525px;
   border-bottom: 2px solid #4f4f4f;
 }
   /*** 상단메뉴 ***/
-  #top_nav{
+  #top_nav {
     width: 100%;
     position: absolute;
     top: 25px;
   }
-    #top_nav > .top_align{
+    #top_nav > .top_align {
       text-align: center;
     }
-      #top_nav .top_align > ul{
+      #top_nav .top_align > ul {
         display: inline-block;
         overflow: hidden;
       }
-        #top_nav .top_align > ul > li{
+        #top_nav .top_align > ul > li {
           float: left;
         }
-        #top_nav .top_align > ul > li:nth-of-type(1){
+        #top_nav .top_align > ul > li:nth-of-type(1) {
           background: url(../images/line_1.png) no-repeat right center;
           padding-right: 15px;
         }
-        #top_nav .top_align > ul > li:nth-of-type(2){
+        #top_nav .top_align > ul > li:nth-of-type(2) {
           margin-left: 15px;
         }
-        #top_nav .top_align > ul > li:nth-of-type(3){
+        #top_nav .top_align > ul > li:nth-of-type(3) {
           background: url(../images/line_1.png) no-repeat right center;
           padding-right: 15px;
           margin-left: 679px;
         }
-        #top_nav .top_align > ul > li:nth-of-type(4){
+        #top_nav .top_align > ul > li:nth-of-type(4) {
           background: url(../images/line_1.png) no-repeat right center;
           padding-right: 15px;
           margin-left: 15px;
         }
-        #top_nav .top_align > ul > li:nth-of-type(5){
+        #top_nav .top_align > ul > li:nth-of-type(5) {
           margin-left: 15px;
         }
-          #top_nav .top_align > ul > li > a{
+          #top_nav .top_align > ul > li > a {
             height: 20px;
             line-height: 20px;
             font-size: 17px;
             color: #d42051;
           }
   /** 로고 **/
-  #main_header > h1.logo{
+  #main_header > h1.logo {
     width: 100%;
     position: absolute;
     top: 70px;
   }
-    #main_header > h1.logo > a{
+    #main_header > h1.logo > a {
       height: 67px;
       background: url(../images/logo.png) no-repeat, url(../images/bg_dots.png) repeat-x;
       background-position: center center;
       text-indent: -6000px; overflow: hidden;
     }
   /** 메인메뉴 **/
-  #main_nav{
+  #main_nav {
     position: absolute;
     width: 100%; height: 64px;
     top: 170px;
     background: url(../images/bg_nav.png) repeat-x;
   }
-    #main_nav > .main_align{
+    #main_nav > .main_align {
       text-align: center;
       position: relative;
       height: 64px;  
@@ -83,7 +83,7 @@
     }
 
     /** 서브 배경 **/
-    #main_nav > .main_align > .sub_bg{
+    #main_nav > .main_align > .sub_bg {
       position: absolute;
       height: 254px; width: 1522px;
       top: 360px;
@@ -94,7 +94,7 @@
       background: url(../images/sub_bg.png) no-repeat;
       z-index: 60;
     }
-    #main_nav > .main_align > .circle{
+    #main_nav > .main_align > .circle {
       display: block;
       width: 17px; height: 18px;
       background: url(../images/circle.png) no-repeat;
@@ -102,48 +102,48 @@
       top: 55px;
       transition-duration: 0.1s;
     }
-    #main_header .circle{
+    #main_header .circle {
       opacity: 0;	
       transition-delay: 0.3s;
     }
-    #main_header.active .circle{
+    #main_header.active .circle {
       opacity: 1;
       transition-duration: 0.3s;
     }
-      #main_nav .main_align > ul{
+      #main_nav .main_align > ul {
         display: inline-block;
         height: 64px;
       }
-        #main_nav .main_align > ul > li{
+        #main_nav .main_align > ul > li {
           float: left;
           margin: 0 30px;
         }
-          #main_nav .main_align > ul > li > a{
+          #main_nav .main_align > ul > li > a {
             height: 25px;
             line-height: 25px;
             padding-top: 22px;
             font-size : 25px;
           }
-          #main_header.active #main_nav .main_align > ul > li:hover > a{
+          #main_header.active #main_nav .main_align > ul > li:hover > a {
             color: #077451;
           }
           /** 서브메뉴 **/
-          #main_nav .sub_nav{
+          #main_nav .sub_nav {
             height: 350px;
             text-align: center;
             margin-top: 35px;
             position: relative;
             z-index: 80;
           }
-            #main_nav .new{
+            #main_nav .new {
               background: url(../images/crown.png) no-repeat 110px 12px;
               width: 150px;
              }
-              #main_nav .sub_nav > li > a{
+              #main_nav .sub_nav > li > a {
               line-height: 18px;
               font-size : 18px;
               padding-top: 18px;
             }
-            #main_nav .sub_nav > li > a:hover{
+            #main_nav .sub_nav > li > a:hover {
               color: #d42150;
             }
