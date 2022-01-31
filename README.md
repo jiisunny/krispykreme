@@ -93,8 +93,8 @@ KakaoTalk -
 - `favicon.ico` 64 x 64 (px) 또는 32 x 32 또는 16 x 16
 - `favicon.png` 500 x 500 (px)
 
-<img src="https://raw.githubusercontent.com/jiisunny/krispykreme/master/favicon.png" alt="donga" width="16" /><br />
-<img src="https://raw.githubusercontent.com/jiisunny/krispykreme/master/favicon.png" alt="donga" width="200" />
+<img src="https://raw.githubusercontent.com/jiisunny/krispykreme/master/favicon.png" alt="krispykreme" width="16" /><br />
+<img src="https://raw.githubusercontent.com/jiisunny/krispykreme/master/favicon.png" alt="krispykreme" width="200" />
 
 ### .ico 파일 제작
 
