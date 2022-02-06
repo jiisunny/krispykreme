@@ -43,12 +43,12 @@ KakaoTalk -
 [더 많은 오픈 그래프 속성 보기](https://ogp.me/)
 
 ```html
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="KrispyKreme" />
-  <meta property="og:title" content="KrispyKreme" />
-  <meta property="og:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
-  <meta property="og:image" content="./images/krispykreme_seo.png" />
-  <meta property="og:url" content="#" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="KrispyKreme" />
+<meta property="og:title" content="KrispyKreme" />
+<meta property="og:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+<meta property="og:image" content="./images/krispykreme_seo.png" />
+<meta property="og:url" content="https://elegant-thompson-69b225.netlify.app/" />
 ```
 
 - `og:type`: 페이지의 유형(E.g, `website`, `video.movie`)
@@ -65,12 +65,12 @@ KakaoTalk -
 [더 많은 트위터 카드 보기](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
 
 ```html
-  <meta property="twitter:card" content="summary" />
-  <meta property="twitter:site" content="KrispyKreme" />
-  <meta property="twitter:title" content="KrispyKreme" />
-  <meta property="twitter:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
-  <meta property="twitter:image" content="./images/krispykreme_seo.png" />
-  <meta property="twitter:url" content="#" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:site" content="KrispyKreme" />
+<meta property="twitter:title" content="KrispyKreme" />
+<meta property="twitter:description" content="크리스피 크림 도넛 소개 사이트, 도너츠, 커피 제품 종류 및 정보, 매장위치 안내." />
+<meta property="twitter:image" content="./images/krispykreme_seo.png" />
+<meta property="twitter:url" content="https://elegant-thompson-69b225.netlify.app/" />
 ```
 
 - `twitter:card`: 페이지(카드)의 유형(E.g. `summary`, `player`)
